@@ -1,9 +1,27 @@
-<html>
-  <head>
-  <title>Page Title</title>
-  </head>
-  <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate This Spot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Rate This Spot</h1>
+        <div class="form-group">
+            <label for="image-upload">Please add an image:</label>
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="review">Please share your experience:</label>
+            <textarea id="review" rows="4" cols="50"></textarea>
+        </div>
+        <button id="save-review">Save Review</button>
+    </div>
+    <div class="reviews-container" id="reviews-container">
+        <h2>Reviews</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
